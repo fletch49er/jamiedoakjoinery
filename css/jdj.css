@@ -1,0 +1,191 @@
+/*
+colour palette:
+color: #3a3a3c; - dark grey
+color: #939598; - light grey
+color: #ac1f2d; - red
+*/
+
+/* <div> overflow fix */
+	.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0px;
+	clear: both;
+	visibility: hidden;
+}
+@font-face {
+    font-family: LiberationSans;
+    src: url(../fonts/PTS55F.ttf);
+}
+
+body {
+	font-family: "LiberationSans", sans-serif;
+	font-weight: lighter;
+	background-color: #fff;
+}
+header,#mainbody,#navbar,#news,#about,#gallery,#contact,footer {
+	box-shadow: 7.5px 7.5px 15px #3a3a3c;
+	-webkit-box-shadow: 7.5px 7.5px 15px #3a3a3c; /* chrome 4.0 + safari 3.1 */
+	-moz-box-shadow: 7.5px 7.5px 15px #3a3a3c; /* firefox 3.5 */
+}
+#navbar,footer {
+	background-color: #3a3a3c;
+}
+header {
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	background-image: url("../images/header.png");
+	height: 150px;
+}
+#navbar {
+	margin-bottom: 10px;
+	padding: 5px 10px 0px 10px;
+	height: 25px;
+}
+
+#mainbody,#news,#about,#gallery,#contact {
+	margin-bottom: 10px;
+	padding: 1px 10px 10px 10px;
+}
+#mainbody,#news,#about,.article {
+	background-color: #fff; /* white */
+	color: #3a3a3c; /* dark grey */
+}
+.article {
+	margin-bottom: 5px;
+	padding: 5px;
+	border: 1px solid #939598; /* light grey */
+}
+#gallery {
+	background-color: #939598; /* light grey */
+	color: #fff; /* white */
+}
+#social_media {
+	display: -webkit-flex; /* Safari */
+    -webkit-flex-wrap: wrap; /* Safari 6.1+ */
+    display: flex;  
+    flex-wrap: wrap;
+    width: 100%;
+}
+#twitter,#linkedin,#facebook,#instagram {
+	padding: 0px 5px 0px 5px;
+}
+.image50 {
+	width: 47%;
+}
+.left {
+	float: left;
+	padding-left: 15px;
+}
+img.left {
+	float: left;
+	padding-left: 5px;
+	padding-bottom: 5px;
+}
+#contact {
+	background-color: #3a3a3c; /* dark grey */
+	color: #fff; /* white */
+}
+footer {
+	margin-top: 10px;
+	padding: 5px 10px 5px 10px;
+	display: block;
+	background-image: url("../images/header.png");
+	font-size: 12px;
+}
+#ftrNavbar {
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+#copyright {
+	margin-bottom: 10px;
+	font-size: 10px;
+	font-weight: bold;
+}
+#ftrButtons {
+	float: right;
+}
+
+#dbmNotice {
+	padding: 10px 0 0 0;
+	font-size: 10px;
+	text-align: right;
+}
+h1,h2,h3,h4,h5,h6,.highlight {
+	color: #ac1f2d; /* red */
+}
+a:link,a:visited	{
+	 text-decoration: none;
+	 color: #ac1f2d; /* red */
+}
+a:hover	{
+	 text-decoration: underline;
+	 color: #ccc; /* dark grey */
+}
+
+#navbar  a:link,#navbar  a:visited  {
+	 text-decoration: none;
+	 color: #fff; /* white */
+}
+#navbar  a:hover {
+	 text-decoration: underline;
+	 color: #ac1f2d; /* red */
+}
+
+/* single column grid for max 479px width */
+@media only screen and (max-width : 480px) {
+	header img {
+		width: 100%;
+		height: auto;
+	}
+	h1 {
+		font-size: 16px;
+	}
+	h2,h3 {
+		font-size: 14px;
+	}
+	h4,h5,h6 {
+		font-size: 12px;
+	}
+	#navbar,#mainbody {
+		font-size: 11px;
+	}
+	#twitter,#linkedin,#facebook,#instagram {
+		width: 100%;
+		height: auto;
+		float: none;
+	}
+	footer,#dbmNotice{
+		font-size: 9px;
+	}	
+}
+
+@media only screen and (min-width : 480px) and (max-width : 599px) {
+	/*container styles*/
+#twitter,#linkedin,#facebook,#instagram {
+		width: 100%;
+	}
+}
+@media only screen and (min-width : 600px) and (max-width : 767px) {
+	/*container styles*/
+#twitter,#linkedin,#facebook,#instagram {
+		width: 100%;
+	}
+}
+@media only screen and (min-width : 768px) and (max-width : 959px) {
+	/*container styles*/
+#twitter,#linkedin,#facebook,#instagram {
+		width: 100%;
+	}
+}
+@media only screen and (min-width: 960px) {
+	/*container styles*/
+	#wrapper,#dbmNotice {
+		max-width: 960px;
+		margin: 0 auto;
+	}
+#twitter,#linkedin,#facebook,#instagram {
+		width: 100%;
+
+	}
+}

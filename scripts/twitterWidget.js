@@ -1,0 +1,24 @@
+/*
+ * ========================================================================
+ * File 		: twitterWidget.js
+ * Purpose	: Javascript for displaying EIP Twitter account widget on
+ *				  EIP website
+ *						
+ * Author		: Mark Fletcher
+ * Date			: 15.07.2015
+ * 
+ * Notes: 
+ *
+ * Revision:
+ *
+ * ========================================================================
+ */
+!function(d,s,id){
+	var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
+	if(!d.getElementById(id)){
+		js=d.createElement(s);
+		js.id=id;js.src=p+"://platform.twitter.com/widgets.js";
+		fjs.parentNode.insertBefore(js,fjs);
+	}
+}
+(document,"script","twitter-wjs");
